@@ -23,6 +23,7 @@ public class JokeController {
     public String showJoke(Model model){
 
         model.addAttribute("joke", jokeService.getJoke());
+        model.addAttribute("joke2", jokeService.getJokeFromRepo());
 
         return "chucknorris";
     }
